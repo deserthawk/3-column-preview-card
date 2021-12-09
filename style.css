@@ -1,0 +1,174 @@
+:root {
+    --card-main-width: 840px;
+    --card-width: calc(var(--card-main-width) / 3);
+    --card-height: 450px;
+    --card-radius: 10px;
+    --card-a-padding: 1em;
+    --card-a-background-color: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+    font-size: 1em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95vh;
+}
+
+@media(max-width:375px) {
+    main {
+        justify-content: flex-start;
+
+    }
+}
+
+.card-main {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--card-radius);
+
+}
+
+@media (max-width:375px) {
+
+    .card-main {
+        flex-direction: column;
+    }
+
+}
+
+.card-inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    color: hsl(0, 0%, 95%);
+    margin: 30px auto 0px auto;
+}
+
+.card-sedan {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: hsl(31, 77%, 52%);
+    border-radius: var(--card-radius) 0px 0px var(--card-radius);
+}
+
+@media (max-width:375px) {
+    .card-sedan {
+        border-radius: var(--card-radius) var(--card-radius) 0px 0px;
+    }
+}
+
+.card-sedan a {
+    text-decoration: none;
+    background-color: var(--card-a-background-color);
+    color: hsl(31, 77%, 52%);
+    width: 130px;
+    text-align: center;
+    padding: var(--card-a-padding);
+    border-radius: 40px;
+    transition: all 0.4s ease-in-out 0s;
+    border-width: 3px;
+    border-color: hsl(31, 77%, 52%);
+    border-style: solid;
+}
+
+.card-sedan a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: var(--card-a-background-color);
+    border-color: var(--card-a-background-color);
+}
+
+
+.card-suv {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-suv a {
+    text-decoration: none;
+    background-color: var(--card-a-background-color);
+    color: hsl(184, 100%, 22%);
+    width: 130px;
+    text-align: center;
+    padding: var(--card-a-padding);
+    border-radius: 40px;
+    transition: all 0.4s ease-in-out 0s;
+    border-width: 3px;
+    border-color: hsl(184, 100%, 22%);
+    border-style: solid;
+}
+
+.card-suv a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: var(--card-a-background-color);
+    border-color: var(--card-a-background-color);
+}
+
+.card-luxury {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px var(--card-radius) var(--card-radius) 0px;
+}
+
+@media (max-width:375px) {
+    .card-luxury {
+        border-radius: 0px 0px var(--card-radius) var(--card-radius);
+    }
+}
+
+.card-luxury a {
+    text-decoration: none;
+    background-color: var(--card-a-background-color);
+    color: hsl(179, 100%, 13%);
+    width: 130px;
+    text-align: center;
+    padding: var(--card-a-padding);
+    border-radius: 40px;
+    transition: all 0.4s ease-in-out 0s;
+    border-width: 3px;
+    border-color: hsl(179, 100%, 13%);
+    border-style: solid;
+
+}
+
+.card-luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: var(--card-a-background-color);
+    border-color: var(--card-a-background-color);
+}
+
+.car-icon {
+    width: 60px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
