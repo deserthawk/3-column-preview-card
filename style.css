@@ -78,7 +78,7 @@ main {
 @media (max-width:375px) {
     .card-sedan {
         border-top-right-radius: var(--card-radius);
-        border-bottom-left-radius: 0px;
+        border-bottom-left-radius: 0;
     }
 }
 
