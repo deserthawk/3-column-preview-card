@@ -136,7 +136,9 @@ main {
 
 @media (max-width:375px) {
     .card-luxury {
-        border-radius: 0px 0px var(--card-radius) var(--card-radius);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: var(--card-radius);
+        border-bottom-right-radius: var(--card-radius);
     }
 }
 
