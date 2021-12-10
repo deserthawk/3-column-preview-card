@@ -131,7 +131,8 @@ main {
     width: var(--card-width);
     height: var(--card-height);
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0px var(--card-radius) var(--card-radius) 0px;
+    border-top-right-radius: var(--card-radius);
+    border-bottom-right-radius: var(--card-radius);
 }
 
 @media (max-width:375px) {
